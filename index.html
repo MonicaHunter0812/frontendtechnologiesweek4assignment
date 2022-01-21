@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Sessions</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="tutor.js"></script>  
+</head>
+<body class="container">
+
+         <h3>Please add the following information to add your tutor request</h3>
+         
+         <form>
+             <div class="form-group">
+                 <label for='new-start-date'>Start Date</label>
+                 <input type="date" class="form-control" id='new-start-date' placeholder="Start Date">
+               </div>
+               <div class="form-group">
+                <label for='new-end-date'>End Date</label>
+                 <input type="date" class="form-control" id='new-end-date' placeholder="End Date">
+               </div>
+               <div class="form-group">
+                <label for='new-subject'>Name of Subject</label>
+                <input type="text" class="form-control" id='new-subject' placeholder="Name of Subject">
+              </div>
+               <button type='add' class="btn btn-primary form-control">Add</button>
+            </form>
+
+         <br>
+
+         <h1>List of Tutoring Session Requests</h1>
+
+         <br>
+     
+         <table id="list" class="table table-dark table-hover">
+             <tr>
+                <th>Name of Subject</th>
+                <th>Date Added</th>
+                <th>Start Date of Session</th>
+                <th>End Date of Session</th>
+             </tr>
+         </table> 
+
+<script src="tutor.js"></script>       
+</body>
+</html>
